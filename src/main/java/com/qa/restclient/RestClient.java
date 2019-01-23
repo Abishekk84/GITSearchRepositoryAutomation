@@ -1,7 +1,9 @@
 package com.qa.restclient;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
@@ -46,9 +48,9 @@ public class RestClient {
 		return headerResponse;
 	}
 
-	// 1.d Get specific Header by passing key 
-	
-	public String getHeaderByKey(CloseableHttpResponse httpResponse,String key) {
+	// 1.d Get specific Header by passing key
+
+	public String getHeaderByKey(CloseableHttpResponse httpResponse, String key) {
 		Header[] headerArray = httpResponse.getAllHeaders();
 		HashMap<String, String> headerResponse = new HashMap<String, String>();
 		for (Header h : headerArray) {
@@ -56,8 +58,7 @@ public class RestClient {
 		}
 		return headerResponse.get(key);
 	}
-	
-	
+
 	// 1.e Get full JSON Response
 
 	public JSONObject getJsonResponse(CloseableHttpResponse httpResponse) throws ParseException, IOException {
@@ -65,9 +66,9 @@ public class RestClient {
 		JSONObject jsonResponse = new JSONObject(response);
 		return jsonResponse;
 	}
-	
-	//1.f Get Specific JSON Value by passing JSON Path
-	
+
+	// 1.f Get Specific JSON Value by passing JSON Path
+
 	public String getJsonByJpath(JSONObject jsonResponse, String jpath) throws ParseException, IOException {
 		Object obj = jsonResponse;
 		for (String s : jpath.split("/"))
@@ -79,6 +80,6 @@ public class RestClient {
 							.get(Integer.parseInt(s.split("\\[")[1].replace("]", "")));
 		return obj.toString();
 	}
-	
-	
+
+
 }

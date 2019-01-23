@@ -7,6 +7,7 @@ import java.util.HashMap;
 
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.util.SystemOutLogger;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -16,9 +17,11 @@ public class TestUtil {
 	static Workbook book;
 	static Sheet sheet;
 	static FileInputStream file;
+
 	public static Object[][] getExcelData(String sheetName) {
 		try {
-			file = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\qa\\data\\API_TestData.xlsx");
+			file = new FileInputStream(
+					System.getProperty("user.dir") + "\\src\\main\\java\\com\\qa\\data\\API_TestData.xlsx");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

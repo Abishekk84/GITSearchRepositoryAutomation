@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 21 23:48:13 CST 2019</td>
+<td>Started on:</td><td>Wed Jan 23 03:05:08 CST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5858 ms)</td>
+<tr><td>Total time:</td><td>12 seconds (12915 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,9 +75,64 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.test.GetTest.ValidateJSONResponse()'><b>ValidateJSONResponse</b><br>Test class: com.qa.test.GetTest<br>Parameters: ?q=api+language:java, 91554, false, 136794526, api, mtdhb</td>
+<td title='com.qa.test.GetTest.validateGetHeader()'><b>validateGetHeader</b><br>Test class: com.qa.test.GetTest<br>Parameters: ?q=api, application/json; charset=utf-8, <https://api.github.com/search/repositories?q=api&page=2>; rel="next", <https://api.github.com/search/repositories?q=api&page=34>; rel="last", 200 OK, nosniff</td>
 <td></td>
-<td>4</td>
+<td>0</td>
+<td>com.qa.test.GetTest@26be92ad</td></tr>
+<tr>
+<td title='com.qa.test.GetTest.validateGetHeader()'><b>validateGetHeader</b><br>Test class: com.qa.test.GetTest<br>Parameters: , application/json; charset=utf-8, , 422 Unprocessable Entity, nosniff</td>
+<td></td>
+<td>0</td>
+<td>com.qa.test.GetTest@26be92ad</td></tr>
+<tr>
+<td title='com.qa.test.GetTest.validateGetHeader()'><b>validateGetHeader</b><br>Test class: com.qa.test.GetTest<br>Parameters: ss, application/json; charset=utf-8, , 404 Not Found, nosniff</td>
+<td></td>
+<td>0</td>
+<td>com.qa.test.GetTest@26be92ad</td></tr>
+<tr>
+<td title='com.qa.test.GetTest.validateGetStatusCode()'><b>validateGetStatusCode</b><br>Test class: com.qa.test.GetTest<br>Parameters: ?q=api, 200</td>
+<td></td>
+<td>3</td>
+<td>com.qa.test.GetTest@26be92ad</td></tr>
+<tr>
+<td title='com.qa.test.GetTest.validateGetStatusCode()'><b>validateGetStatusCode</b><br>Test class: com.qa.test.GetTest<br>Parameters: , 422</td>
+<td></td>
+<td>0</td>
+<td>com.qa.test.GetTest@26be92ad</td></tr>
+<tr>
+<td title='com.qa.test.GetTest.validateGetStatusCode()'><b>validateGetStatusCode</b><br>Test class: com.qa.test.GetTest<br>Parameters: ss, 404</td>
+<td></td>
+<td>0</td>
+<td>com.qa.test.GetTest@26be92ad</td></tr>
+<tr>
+<td title='com.qa.test.GetTest.validateSort()'><b>validateSort</b><br>Test class: com.qa.test.GetTest<br>Parameters: ?q=api, , </td>
+<td></td>
+<td>0</td>
+<td>com.qa.test.GetTest@26be92ad</td></tr>
+<tr>
+<td title='com.qa.test.GetTest.validateSort()'><b>validateSort</b><br>Test class: com.qa.test.GetTest<br>Parameters: ?q=api, stars, desc</td>
+<td></td>
+<td>1</td>
+<td>com.qa.test.GetTest@26be92ad</td></tr>
+<tr>
+<td title='com.qa.test.GetTest.validateSort()'><b>validateSort</b><br>Test class: com.qa.test.GetTest<br>Parameters: ?q=api, stars, asc</td>
+<td></td>
+<td>1</td>
+<td>com.qa.test.GetTest@26be92ad</td></tr>
+<tr>
+<td title='com.qa.test.GetTest.validateUserName()'><b>validateUserName</b><br>Test class: com.qa.test.GetTest<br>Parameters: ?q=user:abishekk84, 200, 200 OK, 1, , Abishekk84, User</td>
+<td></td>
+<td>0</td>
+<td>com.qa.test.GetTest@26be92ad</td></tr>
+<tr>
+<td title='com.qa.test.GetTest.validateUserName()'><b>validateUserName</b><br>Test class: com.qa.test.GetTest<br>Parameters: ?q=user:123abc, 422, 422 Unprocessable Entity, , Validation Failed, , </td>
+<td></td>
+<td>0</td>
+<td>com.qa.test.GetTest@26be92ad</td></tr>
+<tr>
+<td title='com.qa.test.GetTest.validateUserName()'><b>validateUserName</b><br>Test class: com.qa.test.GetTest<br>Parameters: ?q=user:123, 200, 200 OK, 0, , , </td>
+<td></td>
+<td>0</td>
 <td>com.qa.test.GetTest@26be92ad</td></tr>
 </table><p>
 </body>

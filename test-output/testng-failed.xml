@@ -5,7 +5,10 @@
     <classes>
       <class name="com.qa.test.GetTest">
         <methods>
-          <include name="ValidateJSONResponse" invocation-numbers="0"/>
+          <include name="validateSort" invocation-numbers="0 1 2"/>
+          <include name="validateGetHeader" invocation-numbers="0 1"/>
+          <include name="validateGetStatusCode" invocation-numbers="0 1"/>
+          <include name="validateUserName" invocation-numbers="0 1 2"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.qa.test.GetTest -->
