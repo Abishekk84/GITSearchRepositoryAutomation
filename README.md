@@ -29,8 +29,21 @@ Steps to invoke the Automation script:
     /incomplete_results--> The expected incomplete_results in JSON response 
     /items[0]/id---> The /items[0]/id in JSON response 
     
+    Sheet: UserName (Verify the different API response for different username data as provided in the excel)
+    URL--> API URL requested 
+    ex:
+    satuscode -->Expected status code for the different userName requested
+    Status-->Expected status for the different userName requested
+    Message-->Expected Message
+    /items[0]/owner/login-->Expected userName to match with API request
+    
+    Sheet: Sort (Verify the different API response for different sort parameter and sort order chosen)
+    URL--> API URL requested 
+    ex:
+    sortParam -->NULL uses default sort based on score
+    SortOrder-->Sort order for the Sort Param defined (Not applicabe for default values)         
+    
 2. Run the GetTest.Java available in "user.dir"+\src\test\java\com\qa\test\GetTest.java using TestNG run config
 
 3. Verify the TestNG Results
-    
-    
+        
